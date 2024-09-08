@@ -1,16 +1,13 @@
+import Footer from "@/app/components/Footer/Footer";
+import Header from "@/app/components/Header/Header";
+import Main from "@/app/components/Main/Main";
 
 export default function Home() {
   return (
-    <div>
-      <header>
-        header
-      </header>
-      <main>
-        main
-      </main>
-      <footer>
-        footer
-      </footer>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   );
 }
