@@ -1,58 +1,74 @@
-'use client';
-import { useState } from 'react';
-import styled from 'styled-components';
+import { HamburgerIcon } from '@chakra-ui/icons'
+import {
+  IconButton,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList
+} from '@chakra-ui/react'
 
-const DropdownContainer = styled.div`
-  position: relative;
-  display: inline-block;
-`;
+export default function Dropdown() {
 
-const DropdownButton = styled.button`
-  color: #fff;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-`;
-
-const DropdownContent = styled.div`
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-`;
-
-const DropdownItem = styled.a`
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-`;
-
-const Dropdown = () => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleToggle = () => {
-    setIsOpen(!isOpen);
-  };
+  const list = [
+    {
+      title: 'Início',
+      link: '#'
+    },
+    {
+      title: 'Sobre',
+      link: '#'
+    },
+    {
+      title: 'Contato',
+      link: '#'
+    },
+  ]
 
   return (
-    <DropdownContainer>
-      <DropdownButton onClick={handleToggle}>
-        Dropdown
-      </DropdownButton>
-      {isOpen && (
-        <DropdownContent>
-          <DropdownItem href="#">Item 1</DropdownItem>
-          <DropdownItem href="#">Item 2</DropdownItem>
-          <DropdownItem href="#">Item 3</DropdownItem>
-        </DropdownContent>
-      )}
-    </DropdownContainer>
-  );
-};
-
-export default Dropdown;
+    <Menu offset={[0, 1]} >
+      <MenuButton
+        as={IconButton}
+        aria-label='Options'
+        icon={<HamburgerIcon width={'24px'} height={'24px'} />}
+        variant='outline'
+        style={{
+          color: '#000000',
+          height: '100%',
+          width: '56px',
+          borderRadius: '0',
+          backgroundColor: 'transparent',
+          border: 'none',
+        }}
+      />
+      <MenuList
+        style={{
+          borderRadius: '0',
+          backgroundColor: 'rgba(140,126,116, 0.975)',
+          boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
+          padding: '22px',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '10px',
+        }}
+        width={'10px'}
+      >
+        {
+          list.map((item, index) => (
+            <MenuItem
+              key={index}
+              style={{
+                color: '#000000',
+                backgroundColor: 'transparent',
+                justifyContent: 'end',
+                padding: '0px',
+              }}
+              onClick={() => window.location.href = item.link}
+            >
+              {item.title}
+            </MenuItem>
+          ))
+        }
+      </MenuList>
+    </Menu>
+  )
+}

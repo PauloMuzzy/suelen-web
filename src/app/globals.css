@@ -160,6 +160,18 @@ img {
   box-sizing: border-box;
 }
 
+.chakra-menu__menuitem {
+  &:hover {
+    opacity: .75 !important;
+  }
+}
+
+.chakra-button {
+  &:hover {
+    opacity: .75 !important;
+  }
+}
+
 /* Remove animações e transições para usuários que as desativaram */
 @media (prefers-reduced-motion: reduce) {
   * {

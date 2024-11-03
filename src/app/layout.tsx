@@ -1,3 +1,4 @@
+import { ChakraProvider } from '@chakra-ui/react';
 import { Roboto } from '@next/font/google';
 import type { Metadata } from "next";
 import StyledComponentsRegistry from "../../lib/registry";
@@ -23,7 +24,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <ChakraProvider>
+          {children}
+          </ChakraProvider>
+        </StyledComponentsRegistry>
       </body>
     </html>
   );

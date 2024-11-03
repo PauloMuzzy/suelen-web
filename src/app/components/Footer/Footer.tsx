@@ -4,8 +4,8 @@ import * as S from './styles';
 
 export default function Footer() {
   return (
-    <S.Container>
+    <S.Wrapper>
       footer
-    </S.Container>
+    </S.Wrapper>
   );
 }

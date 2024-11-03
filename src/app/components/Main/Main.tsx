@@ -1,12 +1,22 @@
 'use client'
 
+import AboutMe from "@/app/components/Main/AboutMe/AboutMe";
+import DoYouNeedTherapy from "@/app/components/Main/DoYouNeedTherapy/DoYouNeedTherapy";
+import Instagram from "@/app/components/Main/Instagram/Instagram";
+import OurServices from "@/app/components/Main/OurServices/OurServices";
+import PatientReviews from "@/app/components/Main/PatientReviews/PatientReviews";
 import WellCome from "@/app/components/Main/WellCome/WellCome";
 import * as S from './styles';
 
 export default function Main() {
   return (
-    <S.Container>
+    <S.Wrapper>
       <WellCome />
-    </S.Container>
+      <AboutMe />
+      <DoYouNeedTherapy />
+      <OurServices />
+      <PatientReviews />
+      <Instagram />
+    </S.Wrapper>
   );
 }
