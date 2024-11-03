@@ -1,5 +1,6 @@
 import { ChakraProvider } from '@chakra-ui/react';
 import { Roboto } from '@next/font/google';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import type { Metadata } from "next";
 import StyledComponentsRegistry from "../../lib/registry";
 import "./globals.css";
@@ -26,7 +27,7 @@ export default function RootLayout({
       <body className={roboto.className}>
         <StyledComponentsRegistry>
           <ChakraProvider>
-          {children}
+            {children}
           </ChakraProvider>
         </StyledComponentsRegistry>
       </body>
