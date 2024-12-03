@@ -1,4 +1,11 @@
-import { Accordion, AccordionItem, AccordionButton, AccordionPanel, Box, AccordionIcon } from "@chakra-ui/react";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  Box,
+  AccordionIcon,
+} from "@chakra-ui/react";
 import * as S from "./styles";
 
 interface AccordionItemProps {
@@ -8,54 +15,57 @@ interface AccordionItemProps {
 
 function AccordionList({ items }: { items: AccordionItemProps[] }) {
   return (
-    <Accordion allowMultiple
+    <Accordion
+      allowMultiple
       style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        width: '100%',
-        height: 'fit-content',
-        gap: '16px',
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        width: "100%",
+        height: "fit-content",
+        gap: "16px",
       }}
     >
       {items.map((item, index) => (
-        <AccordionItem key={index}
+        <AccordionItem
+          key={index}
           style={{
-            width: '100%',
+            width: "100%",
           }}
         >
           <h2>
-            <AccordionButton 
+            <AccordionButton
               style={{
-                background: '#D7B5AE',
-                color: '#010E21',
-                fontWeight: '400',
-                fontStyle: 'normal',
-                fontSize: '16px',
-                lineHeight: 'normal',
-                width: '100%',
-                height: '48px',
-                borderRadius: '24px 24px 24px 0px',
-                boxShadow: '0px 2px 2px rgba(0, 0, 0, 0.25)',
+                background: "#D7B5AE",
+                color: "#010E21",
+                fontWeight: "400",
+                fontStyle: "normal",
+                fontSize: "16px",
+                lineHeight: "normal",
+                width: "100%",
+                height: "48px",
+                borderRadius: "24px 24px 24px 0px",
+                boxShadow: "0px 2px 2px rgba(0, 0, 0, 0.25)",
               }}
-              >
+            >
               <Box as="span" flex="1" textAlign="left">
                 {item.title}
               </Box>
               <AccordionIcon />
             </AccordionButton>
           </h2>
-          <AccordionPanel pb={4}
+          <AccordionPanel
+            pb={4}
             style={{
-              background: 'transparent',
-              color: '#000',
-              fontWeight: '400',
-              fontStyle: 'normal',
-              fontSize: '14px',
-              lineHeight: 'normal',
-              width: '100%',
-              height: 'fit-content',
+              background: "transparent",
+              color: "#000",
+              fontWeight: "400",
+              fontStyle: "normal",
+              fontSize: "14px",
+              lineHeight: "normal",
+              width: "100%",
+              height: "fit-content",
             }}
           >
             {item.content}
@@ -75,7 +85,9 @@ export default function FrequentlyQuestions() {
   return (
     <S.Wrapper>
       <S.Title>Dúvidas frequentes</S.Title>
-      <S.Text>As principais dúvidas relacionadas à consulta, agendamento e muito mais.</S.Text>
+      <S.Text>
+        As principais dúvidas relacionadas à consulta, agendamento e muito mais.
+      </S.Text>
       <AccordionList items={data} />
     </S.Wrapper>
   );

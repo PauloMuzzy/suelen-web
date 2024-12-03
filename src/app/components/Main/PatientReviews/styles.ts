@@ -15,7 +15,7 @@ export const Wrapper = styled.section`
 export const Title = styled.h1`
   color: #010E21;
   font-family: Roboto;
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

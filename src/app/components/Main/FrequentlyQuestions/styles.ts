@@ -7,12 +7,13 @@ export const Wrapper = styled.section`
   gap: 22px;
   display: flex;
   flex-direction: column;
+  background-color: #B49D8B;
 `
 
 export const Title = styled.h1`
   color: #010E21;
   font-family: Roboto;
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;

@@ -9,7 +9,6 @@ export const Wrapper = styled.section`
   height: fit-content;
   padding: 48px 24px 24px 24px;
   gap: 22px;
-  background-color: #B49D8B;
 `
 
 export const Title = styled.h1`
@@ -25,8 +24,10 @@ export const Title = styled.h1`
 
 export const ButtonWrapper = styled.div`
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: fit-content;
+  gap: 16px;
 `
