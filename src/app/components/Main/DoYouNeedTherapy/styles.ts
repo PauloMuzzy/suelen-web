@@ -14,7 +14,7 @@ export const Wrapper = styled.section`
 export const Title = styled.h1`
   width: 100%;
   color: #010E21;
-  font-family: Merriweather;
+  font-family: Roboto;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -25,7 +25,7 @@ export const Title = styled.h1`
 export const Text = styled.p`
   color: #010E21;
   text-align: justify;
-  font-family: Arsenal;
+  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -48,7 +48,7 @@ export const Item = styled.li`
   justify-content: start;
   gap: 8px;
   color: #010E21;
-  font-family: Arsenal;
+  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

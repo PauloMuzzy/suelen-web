@@ -16,7 +16,7 @@ export const Title = styled.h1`
   color: #010E21;
   width: 100%;
   text-align: left;
-  font-family: Merriweather;
+  font-family: Roboto;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;

@@ -16,7 +16,7 @@ export const Wrapper = styled.section`
 export const Title = styled.h1`
   color: #010E21;
   text-align: center;
-  font-family: Merriweather;
+  font-family: Roboto;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -46,7 +46,7 @@ export const ServiceItem = styled.div`
 export const TextService = styled.p`
   color: #010E21;
   text-align: center;
-  font-family: Arsenal;
+  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

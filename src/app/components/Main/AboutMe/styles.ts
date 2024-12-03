@@ -19,7 +19,7 @@ export const Wrapper = styled.section`
 export const Title = styled.h1`
   width: 100%;
   color: #010E21;
-  font-family: Merriweather;
+  font-family: Roboto;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +38,7 @@ export const SubtitleWrapper = styled.div`
 export const Name = styled.p`
   width: 100%;
   color: #010E21;
-  font-family: Arsenal;
+  font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
@@ -49,7 +49,7 @@ export const Name = styled.p`
 export const CRP = styled.p`
   width: 100%;
   color: #010E21;
-  font-family: Arsenal;
+  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -61,7 +61,7 @@ export const Text = styled.p`
   width: 100%;
   color: #010E21;
   text-align: justify;
-  font-family: Arsenal;
+  font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

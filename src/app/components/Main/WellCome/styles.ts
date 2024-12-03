@@ -28,7 +28,7 @@ export const ImageStyled = styled(Image)`
 export const Title = styled.h1`
   color: #010E21;
   text-align: center;
-  font-family: Merriweather;
+  font-family: Roboto;
   font-size: 32px;
   font-style: normal;
   font-weight: 400;
@@ -38,7 +38,7 @@ export const Title = styled.h1`
 export const Text = styled.p`
   color: #010E21;
   text-align: justify;
-  font-family: Arsenal;
+  font-family: Roboto;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
