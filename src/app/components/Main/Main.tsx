@@ -1,26 +1,24 @@
 "use client";
 
 import AboutMe from "@/app/components/Main/AboutMe/AboutMe";
-import DoYouNeedTherapy from "@/app/components/Main/DoYouNeedTherapy/DoYouNeedTherapy";
-import FrequentlyQuestions from "@/app/components/Main/FrequentlyQuestions/FrequentlyQuestions";
-import Instagram from "@/app/components/Main/Instagram/Instagram";
-// import OurServices from "@/app/components/Main/OurServices/OurServices";
 import PatientReviews from "@/app/components/Main/PatientReviews/PatientReviews";
 import WellCome from "@/app/components/Main/WellCome/WellCome";
+import OurServices from "./OurServices/OurServices";
 import * as S from "./styles";
-import ContactUs from "./ContactUs/ContactUs";
+import MyDifference from "./myDifference/myDifference";
+import HowWeWork from "./HowWeWork/HowWeWork";
+import FloatingButton from "./FloatingButton/FloatingButton";
 
 export default function Main() {
   return (
     <S.Wrapper>
       <WellCome />
+      <MyDifference />
       <AboutMe />
-      <DoYouNeedTherapy />
-      {/* <OurServices /> */}
-      <Instagram />
+      <OurServices />
+      <HowWeWork />
       <PatientReviews />
-      <FrequentlyQuestions />
-      <ContactUs />
+      <FloatingButton />
     </S.Wrapper>
   );
 }

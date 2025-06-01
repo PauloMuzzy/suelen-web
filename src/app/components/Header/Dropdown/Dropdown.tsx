@@ -1,3 +1,5 @@
+"use client";
+
 import { HamburgerIcon } from "@chakra-ui/icons";
 import {
   IconButton,
@@ -11,17 +13,47 @@ export default function Dropdown() {
   const list = [
     {
       title: "Início",
-      link: "#",
+      link: "wellcome",
     },
     {
-      title: "Sobre",
-      link: "#",
+      title: "Sobre mim",
+      link: "about-me",
     },
     {
-      title: "Contato",
-      link: "#",
+      title: "Você precisa de terapia?",
+      link: "do-you-need-therapy",
+    },
+    {
+      title: "Conheça meu Instagram",
+      link: "instagram",
+    },
+    {
+      title: "Avaliações dos nossos pacientes",
+      link: "patient-reviews",
+    },
+    {
+      title: "Dúvidas frequentes",
+      link: "frequently-questions",
+    },
+    {
+      title: "Entre em contato",
+      link: "contact-us",
     },
   ];
+
+  const scrollToSection = (id: string, offset: number = 56) => {
+    if (typeof window !== "undefined") {
+      const section = document.getElementById(id);
+      if (section) {
+        const sectionTop =
+          section.getBoundingClientRect().top + window.pageYOffset;
+        window.scrollTo({
+          top: sectionTop - offset,
+          behavior: "smooth",
+        });
+      }
+    }
+  };
 
   return (
     <Menu offset={[0, 1]}>
@@ -31,7 +63,6 @@ export default function Dropdown() {
         icon={<HamburgerIcon width={"24px"} height={"24px"} />}
         variant="outline"
         style={{
-          color: "#000000",
           height: "100%",
           width: "56px",
           borderRadius: "0",
@@ -49,18 +80,16 @@ export default function Dropdown() {
           flexDirection: "column",
           gap: "10px",
         }}
-        width={"10px"}
       >
         {list.map((item, index) => (
           <MenuItem
             key={index}
             style={{
-              color: "#000000",
               backgroundColor: "transparent",
               justifyContent: "end",
               padding: "0px",
             }}
-            onClick={() => (window.location.href = item.link)}
+            onClick={() => scrollToSection(item.link)}
           >
             {item.title}
           </MenuItem>

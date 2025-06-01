@@ -1,8 +1,9 @@
 "use client";
 
-import { Divider } from "@chakra-ui/react";
+import { Button, Divider } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight, FaStar } from "react-icons/fa6";
 import * as S from "./styles";
+import ScheduleButton from "../ScheduleButton/ScheduleButton";
 export default function PatientReviews() {
   const reviews = [
     {
@@ -20,7 +21,7 @@ export default function PatientReviews() {
   ];
 
   return (
-    <S.Wrapper>
+    <S.Wrapper id="patient-reviews">
       <S.Title>Avaliação dos nossos pacientes</S.Title>
       <S.ReviewWrapper>
         {reviews.map((item, index) => (
@@ -36,9 +37,14 @@ export default function PatientReviews() {
                 ))}
             </S.Stars>
             <FaQuoteRight color="#8C7E74" />
-            {index !== reviews.length - 1 && <Divider />}
+            <Divider
+              orientation="horizontal"
+              width={"75%"}
+              margin={"12px auto"}
+            />
           </S.Review>
         ))}
+        <ScheduleButton />
       </S.ReviewWrapper>
     </S.Wrapper>
   );

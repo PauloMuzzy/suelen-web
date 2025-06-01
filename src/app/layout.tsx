@@ -1,13 +1,13 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import { Roboto } from "@next/font/google";
+import { DM_Sans } from "@next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import type { Metadata } from "next";
 import StyledComponentsRegistry from "../../lib/registry";
 import "./globals.css";
 
-const roboto = Roboto({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["100", "300", "400", "500", "700", "900"],
   display: "swap",
 });
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={dmSans.className}>
         <StyledComponentsRegistry>
           <ChakraProvider>{children}</ChakraProvider>
         </StyledComponentsRegistry>

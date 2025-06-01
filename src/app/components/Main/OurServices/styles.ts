@@ -8,17 +8,22 @@ export const Wrapper = styled.section`
   justify-content: center;
   width: 100%;
   height: fit-content;
-  padding: 48px 24px 24px 24px;
-  gap: 22px;
-  background-color: #B49D8B;
+  border-radius: 32px;
+  gap: 16px;
 `
 
 export const Title = styled.h1`
-  color: #010E21;
   width: 100%;
-  text-align: left;
-  font-family: Roboto;
-  font-size: 24px;
+  text-align: center;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+`
+
+export const Text = styled.p`
+  text-align: justify;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -31,45 +36,59 @@ export const ServiceWrapper = styled.div`
   justify-content: center;
   width: 100%;
   height: fit-content;
-  gap: 48px;
+  border-radius:  32px;
+  padding: 32px 24px;
+  gap: 16px;
+  background-color: rgba(180, 157, 139, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 `
 
-export const ServiceItem = styled.div`
+export const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: fit-content;
-  gap: 8px;
+  background-color: #edeae6;
+  padding: 0px;
+  border-radius: 32px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+` 
+
+export const CardImage = styled(Image)`
+  max-height: 160px;
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 32px 32px 0 0;
+  opacity: 0.75;
 `
 
-export const TextService = styled.p`
-  color: #010E21;
-  text-align: center;
-  font-family: Roboto;
+export const CardTitle = styled.h2`
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding:  32px;
+`
+
+export const CardText = styled.p`
+  text-align: left;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding: 0 32px 32px 32px;
 `
 
-export const ServiceImage = styled(Image)`
-  max-width: 160px;
-  max-height: 160px;
+export const ButtonWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  height: 160px; /* Garante a altura definida */
-  object-fit: cover; /* Corta e ajusta a imagem para cobrir todo o espaço */
-  border-radius: 12px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  overflow: hidden; /* Garante que o conteúdo extra seja escondido */
-  display: block;
-  cursor: pointer;
-
-  &hover {
-    max-width: 170px;
-    max-height: 170px;
-    width: 100%;
-    height: 170px; 
-  }
+  height: fit-content;
+  justify-content: center;
 `

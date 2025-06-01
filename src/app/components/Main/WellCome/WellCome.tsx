@@ -1,38 +1,25 @@
 "use client";
 import perfil from "@/app/assets/images/perfil.jpeg";
-import { Button } from "@chakra-ui/react";
 import * as S from "./styles";
+import { Button } from "@chakra-ui/react";
+import ScheduleButton from "../ScheduleButton/ScheduleButton";
 
 export default function WellCome() {
   return (
-    <S.Wrapper>
+    <S.Wrapper id="wellcome">
       <S.ImageStyled src={perfil} alt="Dan Abramov" />
-      <S.Title>Bem - vindo!</S.Title>
+      <S.Title>
+        Suelen Muzzy,
+        <br /> Psicóloga clínica
+      </S.Title>
       <S.Text>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        sagittis nibh tellus, in mollis nunc consectetur sed. Class aptent
-        taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-        himenaeos.
+        Sou psicóloga formada e especialista em Terapia Cognitivo-Comportamental
+        (TCC), um tipo de terapia prática que te ajuda a mudar pensamentos e
+        comportamentos para viver melhor. Quero te ajudar a lidar com problemas
+        como ansiedade, estresse, baixa autoestima ou dificuldades em
+        relacionamentos, usando estratégias feitas especialmente para você.
       </S.Text>
-      <S.ButtonWrapper>
-        <Button
-          style={{
-            background: "#D7B5AE",
-            color: "#010E21",
-            fontWeight: "400",
-            fontStyle: "normal",
-            fontSize: "16px",
-            lineHeight: "normal",
-            width: "auto",
-            height: "48px",
-            borderRadius: "100px 100px 100px 0",
-            boxShadow: "0px 2px 2px rgba(0, 0, 0, 0.25)",
-            padding: "16px",
-          }}
-        >
-          Quero agendar uma consulta
-        </Button>
-      </S.ButtonWrapper>
+      <ScheduleButton />
     </S.Wrapper>
   );
 }

@@ -1,5 +1,5 @@
 "use client";
-import logo from "@/app/assets/svgs/logo.svg";
+import logo from "@/app/assets/images/logo.png";
 import Dropdown from "@/app/components/Header/Dropdown/Dropdown";
 import Image from "next/image";
 import * as S from "./styles";
