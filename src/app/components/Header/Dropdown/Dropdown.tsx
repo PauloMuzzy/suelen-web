@@ -16,32 +16,28 @@ export default function Dropdown() {
       link: "wellcome",
     },
     {
+      title: "Meu diferencial",
+      link: "my-difference",
+    },
+    {
       title: "Sobre mim",
       link: "about-me",
     },
     {
-      title: "Você precisa de terapia?",
-      link: "do-you-need-therapy",
+      title: "Serviços",
+      link: "our-services",
     },
     {
-      title: "Conheça meu Instagram",
-      link: "instagram",
+      title: "Como Funciona Nosso Trabalho",
+      link: "how-we-work",
     },
     {
       title: "Avaliações dos nossos pacientes",
       link: "patient-reviews",
     },
-    {
-      title: "Dúvidas frequentes",
-      link: "frequently-questions",
-    },
-    {
-      title: "Entre em contato",
-      link: "contact-us",
-    },
   ];
 
-  const scrollToSection = (id: string, offset: number = 56) => {
+  const scrollToSection = (id: string, offset: number = 96) => {
     if (typeof window !== "undefined") {
       const section = document.getElementById(id);
       if (section) {

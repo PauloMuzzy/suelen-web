@@ -5,7 +5,7 @@ import ScheduleButton from "../ScheduleButton/ScheduleButton";
 
 export default function Instagram() {
   return (
-    <S.Wrapper id="my-unique-approach">
+    <S.Wrapper id="my-difference">
       <S.Title>Meu diferencial</S.Title>
       <S.DifferenceWrapper>
         <S.DifferenceTitle>Empatia e vínculo autêntico</S.DifferenceTitle>

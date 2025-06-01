@@ -3,12 +3,23 @@ import { Button } from "@chakra-ui/react";
 import * as S from "./styles";
 
 export default function ScheduleButton() {
+  const handleWhatsAppClick = () => {
+    const phoneNumber = "5519984242412";
+    const message = "Olá, gostaria de mais informações!";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <S.ButtonWrapper>
       <Button
+        onClick={handleWhatsAppClick}
         style={{
-          background: "#D9D9D9",
-          fontWeight: "400",
+          background: "#D7B5AE",
+          fontWeight: "500",
           fontStyle: "normal",
           fontSize: "16px",
           lineHeight: "normal",
@@ -19,7 +30,7 @@ export default function ScheduleButton() {
           padding: "16px",
         }}
       >
-        Quero agendar uma consulta
+        Entre em contato
       </Button>
     </S.ButtonWrapper>
   );

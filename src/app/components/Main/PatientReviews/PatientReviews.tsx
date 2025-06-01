@@ -18,6 +18,12 @@ export default function PatientReviews() {
         "“Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce mollis odio in massa mollis, nec vulputate nunc imperdiet. Morbi ullamcorper consectetur semper. Duis suscipit mauris neque, a blandit nisi blandit nec. Integer quis egestas velit, sed interdum risus.Morbi et ultrices diam. Aliquam sollicitudin dui aliquam malesuada laoreet. ”",
       stars: 5,
     },
+    {
+      name: "P.H",
+      reviewText:
+        "“Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Fusce mollis odio in massa mollis, nec vulputate nunc imperdiet. Morbi ullamcorper consectetur semper. Duis suscipit mauris neque, a blandit nisi blandit nec. Integer quis egestas velit, sed interdum risus.Morbi et ultrices diam. Aliquam sollicitudin dui aliquam malesuada laoreet. ”",
+      stars: 5,
+    },
   ];
 
   return (

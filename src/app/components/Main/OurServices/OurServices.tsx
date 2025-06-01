@@ -51,13 +51,15 @@ export default function OurServices() {
           Juntos, podemos trabalhar em prol do seu bem-estar por meio da
           psicoterapia online.
         </S.Text>
-        {list.map((item, index) => (
-          <S.Card key={index}>
-            <S.CardImage src={item.image} alt={item.title} />
-            <S.CardTitle>{item.title}</S.CardTitle>
-            <S.CardText>{item.textService}</S.CardText>
-          </S.Card>
-        ))}
+        <S.CardWrapper>
+          {list.map((item, index) => (
+            <S.Card key={index}>
+              <S.CardImage src={item.image} alt={item.title} />
+              <S.CardTitle>{item.title}</S.CardTitle>
+              <S.CardText>{item.textService}</S.CardText>
+            </S.Card>
+          ))}
+        </S.CardWrapper>
         <ScheduleButton />
       </S.ServiceWrapper>
     </S.Wrapper>

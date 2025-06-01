@@ -8,6 +8,10 @@ export const Wrapper = styled.section`
   width: 100%;
   height: fit-content;
   gap: 16px;
+
+  @media (min-width: 1024px) {
+    max-width: 1024px;
+  }
 `
 
 export const Title = styled.h1`
@@ -17,6 +21,11 @@ export const Title = styled.h1`
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  color : #8C7E74;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+  }
 `
 
 export const ReviewWrapper = styled.div`
@@ -28,8 +37,15 @@ export const ReviewWrapper = styled.div`
   height: fit-content;
   border-radius:  32px;
   padding: 32px 24px;
-  background-color: rgba(180, 157, 139, 0.25);
+  background-color: rgba(180, 157, 139, 0.15);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  @media (min-width: 1024px) {
+    padding: 48px 32px;
+    button {
+        margin-top : 32px;
+    }
+  }
 `
 
 export const Review = styled.div`
@@ -49,6 +65,10 @@ export const Name = styled.h3`
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+
+  @media (min-width: 1024px) {
+    font-size: 20px;
+  }
 `
 
 export const Text = styled.p`
@@ -58,18 +78,13 @@ export const Text = styled.p`
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
 `
 
 export const Stars = styled.div`
   display: flex;
   gap: 4px;
-`
-
-export const ButtonWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: fit-content;
-  justify-content: center;
 `

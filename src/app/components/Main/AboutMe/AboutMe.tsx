@@ -22,7 +22,14 @@ export default function AboutMe() {
           apoiar no enfrentamento de desafios como ansiedade, estresse, baixa
           autoestima ou dificuldades nos relacionamentos, com estratégias
           personalizadas e focadas em resultados. Vamos juntos construir um
-          caminho para o seu bem-estar?
+          caminho para o seu bem-estar? Seja bem-vindo(a) ao meu espaço! Sou
+          psicóloga formada e especializada em Terapia Cognitivo-Comportamental
+          (TCC), uma abordagem prática e baseada em evidências que ajuda a
+          transformar pensamentos e comportamentos para uma vida mais
+          equilibrada. Meu objetivo é te apoiar no enfrentamento de desafios
+          como ansiedade, estresse, baixa autoestima ou dificuldades nos
+          relacionamentos, com estratégias personalizadas e focadas em
+          resultados. Vamos juntos construir um caminho para o seu bem-estar?
         </S.Text>
         <ScheduleButton />
       </S.AboutMeWrapper>
