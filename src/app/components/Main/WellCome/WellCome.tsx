@@ -1,7 +1,7 @@
 "use client";
+
 import perfil from "@/app/assets/images/perfil.jpeg";
 import * as S from "./styles";
-import { Button } from "@chakra-ui/react";
 import ScheduleButton from "../ScheduleButton/ScheduleButton";
 
 export default function WellCome() {

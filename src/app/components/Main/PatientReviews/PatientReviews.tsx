@@ -1,6 +1,6 @@
 "use client";
 
-import { Button, Divider } from "@chakra-ui/react";
+import { Divider } from "@chakra-ui/react";
 import { FaQuoteLeft, FaQuoteRight, FaStar } from "react-icons/fa6";
 import * as S from "./styles";
 import ScheduleButton from "../ScheduleButton/ScheduleButton";

@@ -1,6 +1,5 @@
 "use client";
 
-import { Button } from "@chakra-ui/react";
 import perfil2 from "@/app/assets/images/perfil2.png";
 import * as S from "./styles";
 import ScheduleButton from "../ScheduleButton/ScheduleButton";

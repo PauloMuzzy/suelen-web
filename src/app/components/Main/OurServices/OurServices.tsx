@@ -6,7 +6,6 @@ import img3 from "@/app/assets/images/img1.jpg";
 import img4 from "@/app/assets/images/img1.jpg";
 import img5 from "@/app/assets/images/img1.jpg";
 import * as S from "./styles";
-import { Button } from "@chakra-ui/react";
 import ScheduleButton from "../ScheduleButton/ScheduleButton";
 
 export default function OurServices() {

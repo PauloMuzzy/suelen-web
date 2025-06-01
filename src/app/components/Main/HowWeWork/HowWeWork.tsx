@@ -1,5 +1,5 @@
 "use client";
-import { Button, Divider } from "@chakra-ui/react";
+import { Divider } from "@chakra-ui/react";
 import * as S from "./styles";
 import ScheduleButton from "../ScheduleButton/ScheduleButton";
 
