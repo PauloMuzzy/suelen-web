@@ -1,14 +1,14 @@
 "use client";
 import { Divider } from "@chakra-ui/react";
-import * as S from "./styles";
 import ScheduleButton from "../ScheduleButton/ScheduleButton";
+import * as S from "./styles";
 
 export default function HowWeWork() {
   const List = [
     {
       number: 1,
       title: "Agendamento",
-      text: "Entre em contato conosco e agende uma consulta online ou presencial.",
+      text: "Entre em contato conosco e agende uma consulta online.",
     },
     {
       number: 2,

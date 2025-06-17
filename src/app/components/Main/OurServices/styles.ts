@@ -91,6 +91,7 @@ export const Card = styled.div`
   padding: 0px;
   border-radius: 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: auto;
 ` 
 
 export const CardImage = styled(Image)`

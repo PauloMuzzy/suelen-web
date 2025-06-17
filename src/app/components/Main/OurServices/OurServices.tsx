@@ -1,44 +1,34 @@
 "use client";
 
-import img1 from "@/app/assets/images/img1.jpg";
-import img2 from "@/app/assets/images/img1.jpg";
-import img3 from "@/app/assets/images/img1.jpg";
-import img4 from "@/app/assets/images/img1.jpg";
-import img5 from "@/app/assets/images/img1.jpg";
-import * as S from "./styles";
+import { default as img1, default as img2, default as img3, default as img4 } from "@/app/assets/images/img1.jpg";
 import ScheduleButton from "../ScheduleButton/ScheduleButton";
+import * as S from "./styles";
 
 export default function OurServices() {
   const list = [
     {
       image: img1,
-      title: "Psicoterapia para Adultos",
+      title: "Psicoterapia para Adultos e Adolescentes",
       textService:
-        "A psicoterapia para adultos oferece um espaço seguro e acolhedor para explorar emoções, pensamentos e comportamentos. Por meio de técnicas baseadas em evidências, ajudamos a enfrentar desafios como ansiedade, depressão, estresse e questões relacionais, promovendo autoconhecimento e bem-estar.",
+        "A psicoterapia é um espaço especializado para cuidar da sua saúde emocional, desenvolver novas formas de lidar com desafios e promover o autoconhecimento. Atendo adolescentes e adultos com demandas diversas, desde o manejo de transtornos específicos até dificuldades emocionais e comportamentais sem diagnóstico formal."
     },
     {
       image: img2,
-      title: "Psicoterapia Infantil",
+      title: "Psicoterapia para Ansiedade, Depressão e Transtornos do Humor",
       textService:
-        "A psicoterapia para crianças utiliza abordagens lúdicas, como brincadeiras e desenhos, para ajudar os pequenos a expressar sentimentos e lidar com dificuldades emocionais ou comportamentais. Nosso objetivo é apoiar o desenvolvimento saudável e fortalecer a autoestima em um ambiente empático.",
+       "Se você enfrenta sintomas como preocupação excessiva, crises de ansiedade, desânimo persistente ou oscilações de humor, a psicoterapia pode ajudar a entender os fatores que mantêm esses quadros e a desenvolver estratégias para o manejo emocional."
     },
     {
       image: img3,
-      title: "Terapia de Casal",
+      title: "Psicoterapia para Demandas Sem Diagnóstico (Processos Desadaptativos)",
       textService:
-        "A terapia de casal é voltada para melhorar a comunicação, resolver conflitos e fortalecer os laços entre parceiros. Com sessões personalizadas, trabalhamos para promover entendimento mútuo e construir relacionamentos mais saudáveis e harmoniosos.",
+       "Mesmo sem um diagnóstico específico, muitas pessoas buscam terapia para lidar com dificuldades que impactam a qualidade de vida, como procrastinação, dificuldades de regulação emocional, baixa autoestima, conflitos interpessoais, tomada de decisões e autocrítica excessiva. O foco é desenvolver habilidades de enfrentamento e promover mudanças concretas no dia a dia."
     },
     {
       image: img4,
-      title: "Aconselhamento Familiar",
-      textService:
-        "O aconselhamento familiar ajuda a resolver conflitos e melhorar a dinâmica entre membros da família. Por meio de diálogos mediados, buscamos fortalecer os vínculos, promover a compreensão e criar um ambiente familiar mais equilibrado e acolhedor.",
-    },
-    {
-      image: img5,
       title: "Psicoterapia para Adolescentes",
       textService:
-        "A psicoterapia para adolescentes oferece suporte para enfrentar os desafios típicos dessa fase, como questões de identidade, pressões sociais e emocionais. Com uma abordagem empática, ajudamos jovens a desenvolverem resiliência e habilidades para lidar com suas emoções.",
+       "O período da adolescência traz inúmeros desafios emocionais, sociais e comportamentais. Trabalho com adolescentes de forma cuidadosa, respeitando o desenvolvimento dessa fase, com foco em ansiedade escolar e social, dificuldades de relacionamento familiar e com pares, questões de identidade e autoestima, e regulação emocional."
     },
   ];
 

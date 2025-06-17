@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import Image from 'next/image';
+import styled from "styled-components";
 
 export const Wrapper = styled.section`
   display: flex;
@@ -128,6 +128,10 @@ export const Text = styled.p`
   font-weight: 400;
   line-height: normal;
   text-align: center;
+
+  b {
+    font-weight: 600;
+  }
 
   @media (min-width: 768px) {
     grid-area: text;
